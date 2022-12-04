@@ -1,0 +1,102 @@
+.container{
+    background-color: rgb(47, 45, 51);
+    text-align: center;
+    align-items: center;
+    color : white;
+    display: flex;
+    flex-direction: row;
+}
+
+.results-div{
+    display: flex;
+    flex-direction: column;
+}
+
+.results-text-div{
+    flex : 1;
+}
+
+.results-button-div{
+    flex : 1;
+}
+
+@media screen and (max-width : 995px) {
+    .container{
+        background-color: rgb(47, 45, 51);
+        text-align: center;
+        align-items: center;
+        color : white;
+        display: flex;
+        flex-direction: column;
+    }
+    
+}
+
+.container-column-1{
+    display: block;
+    flex : 1.5;
+}
+
+.container-column-2{
+    flex : 0.7;
+}
+
+.header{
+    margin : 10px;
+    padding : 10px;
+    margin-bottom: 0;
+    font-size: 1.2em;
+    font-weight: 350;
+}
+
+select{
+    margin-right : 10px;
+}
+
+.section{
+    align-items: center;
+    text-align: center;
+    padding : 10px;
+    margin : 10px;
+}
+
+.screen{
+    background-color: whitesmoke;
+    height: 100px;
+    margin : 10px 50px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    border-bottom-left-radius: 50px;
+    border-bottom-right-radius: 50px;
+    color :rgb(47, 45, 51);
+    font-size: 19px;
+    font-weight: bold;
+    padding-top : 35px;
+}
+
+.footer{
+    margin : 10px 50px 10px 10px;
+    padding : 5px;
+    text-align: center;
+    font-size: 20px;
+}
+
+#nbrSeats{
+    color : rgb(78, 184, 255);
+}
+
+#seatsPrice{
+    color : rgb(78, 184, 255);
+}
+
+.unselected:hover{
+    background-color: "#44444d";
+}
+
+.header-second-div{
+    margin-top: 10px;
+}
+
+.seats-wrapper{
+    margin-bottom: 10%;
+}
