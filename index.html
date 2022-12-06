@@ -8,6 +8,27 @@
     <title>Movie Seat Booking</title>
   </head>
   <body>
+    <nav>
+      <div><a href="./index.html"> <button class="btn btn-secondary">home</button></a></div>
+      <div>
+        <div class="dropdown">
+          <a class="btn btn-secondary dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false" value="dropdown">
+            <input id="logger" type="button" class="btn btn-secondary" value="****">
+          </a>
+        
+          <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+            <li><a class="dropdown-item" href="./update.html">profile</a></li>
+            
+            <li><a class="dropdown-item" href="home.html">logout
+            </a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+
+
+
     <div class="movie-container">
       <label> Select a movie:</label>
       <select id="movie" class="eventi">
@@ -105,7 +126,12 @@
       >
       <input type="submit" value="reserver" name="reserver" id="res">
     </p>
-
-    <script src="./scripts/script.js" type="module"></script>
+<script>
+       dropdown= document.getElementById('logger') 
+       dropdown.value = "welcome " + JSON.parse(localStorage.getItem("user")).username
+        console.log(dropdown)
+</script>
+    <script src="./scripts/script.js" type="module">
+    </script>
   </body>
 </html>

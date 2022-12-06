@@ -52,7 +52,7 @@ if(!keep){// if the keep me logged in not checked we will open session storage i
 }else{
     localStorage.setItem('loged in','yes')
     localStorage.setItem('user',JSON.stringify(user))
-    window.location = "../home.html"
+    window.location = "../update.html"
 }
 }
 
